@@ -45,3 +45,23 @@ Angular ใช้แนวคิดการแบ่ง Front end เป็น 
 * The HTML template
 * The logic
 * The styling (CSS, Sass, Stylus, etc..)
+
+### แก้ปัญหาเรื่อง symlink
+
+
+https://ahtik.com/fixing-your-virtualbox-shared-folder-symlink-error/
+https://github.com/npm/npm/issues/992
+
+```txt
+# if running inside VirtualBox on a shared folder
+# you must enable symlinks on the shared folder
+$ VBoxManage setextradata "<vm name>" VBoxInternal2/SharedFoldersEnableSymlinksCreate/<shared folder> 1
+
+# verify with
+$ VBoxManage getextradata "<vm name>" enumerate
+```
+
+### เปิด Port ให้เครื่องอื่นเข้ามาใช้งานได้
+
+ng serve --host 0.0.0.0
+
