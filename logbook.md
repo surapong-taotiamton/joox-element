@@ -61,7 +61,22 @@ $ VBoxManage setextradata "<vm name>" VBoxInternal2/SharedFoldersEnableSymlinksC
 $ VBoxManage getextradata "<vm name>" enumerate
 ```
 
-### เปิด Port ให้เครื่องอื่นเข้ามาใช้งานได้
+### เปิด Port ให้เครื่องอื่นเข้ามาใช้งานได้ และ Refresh เมื่อ code เปลี่ยน
 
-ng serve --host 0.0.0.0
+sudo ng serve --poll=2000 --host 0.0.0.0
 
+
+### วิธีทำ iframe แบบ dynamic
+
+https://stackoverflow.com/questions/38037760/how-to-set-iframe-src-in-angular-2-without-causing-unsafe-value-exception
+https://www.linkedin.com/pulse/working-iframe-angular-thiago-adriano
+https://medium.com/claritydesignsystem/four-ways-of-listening-to-dom-events-in-angular-part-1-event-binding-3ec7e9f51a1d
+
+
+### วิธีการดึงตัว element html
+
+https://stackoverflow.com/questions/48226868/document-getelementbyid-replacement-in-angular4-typescript/48226924
+
+### วิธีดู event ของ iframe
+
+https://stackoverflow.com/questions/10781880/dynamically-created-iframe-triggers-onload-event-twice/15880489#15880489
